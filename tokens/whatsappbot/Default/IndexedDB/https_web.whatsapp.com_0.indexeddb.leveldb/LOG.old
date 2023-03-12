@@ -1,0 +1,6 @@
+2023/03/12-00:39:12.529 232c Creating DB A:\Projetos\GitHub\Bot_Whats\tokens\whatsappbot\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb since it was missing.
+2023/03/12-00:39:12.532 232c Reusing MANIFEST A:\Projetos\GitHub\Bot_Whats\tokens\whatsappbot\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/03/12-00:39:12.573 24c8 Level-0 table #5: started
+2023/03/12-00:39:12.575 24c8 Level-0 table #5: 7376 bytes OK
+2023/03/12-00:39:12.576 24c8 Delete type=0 #3
+2023/03/12-00:39:12.576 1eac Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)

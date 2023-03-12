@@ -1,0 +1,29 @@
+2023/03/12-00:39:16.870 137c Reusing MANIFEST A:\Projetos\GitHub\Bot_Whats\tokens\whatsappbot\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/03/12-00:39:16.870 137c Recovering log #4
+2023/03/12-00:39:16.873 137c Reusing old log A:\Projetos\GitHub\Bot_Whats\tokens\whatsappbot\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000004.log 
+2023/03/12-00:39:16.912 185c Level-0 table #8: started
+2023/03/12-00:39:16.914 185c Level-0 table #8: 51219 bytes OK
+2023/03/12-00:39:16.916 185c Delete type=0 #4
+2023/03/12-00:39:16.916 137c Manual compaction at level-0 from '\x00\x07\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x08\x00\x00\x00' @ 0 : 0; will stop at (end)
+2023/03/12-00:39:16.917 137c Level-0 table #10: started
+2023/03/12-00:39:16.918 137c Level-0 table #10: 1425 bytes OK
+2023/03/12-00:39:16.919 137c Delete type=0 #7
+2023/03/12-00:39:16.919 137c Manual compaction at level-0 from '\x00\x06\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at '\x00\x06\x05\x02\x03\x00\x00\x00\x00\x00\x00\xf0?' @ 5132 : 0
+2023/03/12-00:39:16.919 137c Compacting 1@0 + 1@1 files
+2023/03/12-00:39:16.921 137c Generated table #11@0: 1461 keys, 15119 bytes
+2023/03/12-00:39:16.921 137c Compacted 1@0 + 1@1 files => 15119 bytes
+2023/03/12-00:39:16.922 137c compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/03/12-00:39:16.922 137c Delete type=2 #10
+2023/03/12-00:39:16.922 137c Manual compaction at level-0 from '\x00\x06\x05\x02\x03\x00\x00\x00\x00\x00\x00\xf0?' @ 5132 : 0 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at (end)
+2023/03/12-00:39:16.924 137c Level-0 table #13: started
+2023/03/12-00:39:16.925 137c Level-0 table #13: 883 bytes OK
+2023/03/12-00:39:16.926 137c Delete type=2 #8
+2023/03/12-00:39:16.926 137c Delete type=0 #9
+2023/03/12-00:39:16.926 185c Manual compaction at level-0 from '\x00\x04\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at '\x00\x08\x00\x00\x05' @ 5149 : 1
+2023/03/12-00:39:16.926 185c Compacting 1@0 + 1@1 files
+2023/03/12-00:39:16.928 185c Generated table #14@0: 1445 keys, 14634 bytes
+2023/03/12-00:39:16.928 185c Compacted 1@0 + 1@1 files => 14634 bytes
+2023/03/12-00:39:16.928 185c compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/03/12-00:39:16.929 185c Delete type=2 #13
+2023/03/12-00:39:16.929 185c Manual compaction at level-0 from '\x00\x08\x00\x00\x05' @ 5149 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at (end)
+2023/03/12-00:39:16.929 185c Manual compaction at level-0 from '\x00\x03\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at (end)
