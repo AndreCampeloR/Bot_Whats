@@ -8,7 +8,7 @@ class Sender {
     }
 
     async sendText(to: string, body: string){
-        this.client.sendText(to, body)
+        await this.client.sendText(to, body)
     }
 
     private initialize() {
@@ -16,7 +16,7 @@ class Sender {
         const start = (client: Whatsapp) => {
             this.client = client
 
-            this.sendText("5544998973198@c.us", "Olá, essa é uma mensagem automática")
+            // this.sendText("5544998973198@c.us", "Olá, essa é uma mensagem automática")
         }
 
         create({session: 'whatsappbot', multidevice: false})
