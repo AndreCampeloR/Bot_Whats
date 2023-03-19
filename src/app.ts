@@ -16,6 +16,9 @@ app.post('/send', async (req: Request, res: Response) => {
    const { number, message } = req.body
 
     try{
+    
+
+      
     await sender.sendText(number, message)
 
     return res.status(200).json()
