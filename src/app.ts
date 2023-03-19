@@ -9,7 +9,10 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false}))
 
 app.get('/status', (req: Request, res: Response) => {
-
+    return res.send({
+      qr_code: sender.qrCode,
+      connected: sender.isConnected
+    })
 })
 
 app.post('/send', async (req: Request, res: Response) => {
@@ -18,7 +21,7 @@ app.post('/send', async (req: Request, res: Response) => {
     try{
     
 
-      
+
     await sender.sendText(number, message)
 
     return res.status(200).json()
