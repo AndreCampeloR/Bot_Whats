@@ -4,9 +4,7 @@ import { create, Whatsapp, Message, SocketState } from "venom-bot"
 
 export type QRcode = {
     base64Qr: string
-    asciiQR: string
     attempts: number
-    urlCode: string       //possivel problema de tipagem 
 }
 
 class Sender {
@@ -47,9 +45,9 @@ class Sender {
 
     private initialize() {
         const qr = (
-            base64Qr: string, asciiQR: string, attempts: number, urlCode: string
+            base64Qr: string, attempts: number, 
             ) => {
-            this.qr = { base64Qr, asciiQR, attempts, urlCode}
+            this.qr = { base64Qr, attempts}
         }
 
         const status = (statusSession: string) => {
@@ -59,6 +57,10 @@ class Sender {
 
         const start = (client: Whatsapp) => {
             this.client = client
+
+            client.onStateChange((state) => {
+                this.connected = state === SocketState.CONNECTED
+            })
    
             // this.sendText("5544998973198@c.us", "Olá, essa é uma mensagem automática")
         }
