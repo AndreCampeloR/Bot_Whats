@@ -4,12 +4,23 @@ import { create, Whatsapp, Message, SocketState } from "venom-bot"
 
 export type QRcode = {
     base64Qr: string
+    asciiQR: string
+    attempts: number
+    urlCode: string       //possivel problema de tipagem 
 }
 
 class Sender {
     private client: Whatsapp
-    private isConnected: string
+    private connected: boolean
     private qr: QRcode
+
+    get isConnected(): boolean {
+        return this.connected
+    }
+
+    get qrCode(): QRcode {
+        return this.qr
+    }
 
     constructor() {
         this.initialize()
@@ -35,10 +46,16 @@ class Sender {
     }
 
     private initialize() {
-        const qr = (base64Qr: string) => {
-            this.qr = { base64Qr }
+        const qr = (
+            base64Qr: string, asciiQR: string, attempts: number, urlCode: string
+            ) => {
+            this.qr = { base64Qr, asciiQR, attempts, urlCode}
         }
 
+        const status = (statusSession: string) => {
+            this.connected = ["isLogged", "qrReadSuccess", "chatsAvailable"]
+            .includes(statusSession)
+        }
 
         const start = (client: Whatsapp) => {
             this.client = client
