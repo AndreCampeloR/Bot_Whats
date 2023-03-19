@@ -13,8 +13,10 @@ app.get('/status', (req: Request, res: Response) => {
 })
 
 app.post('/send', async (req: Request, res: Response) => {
+   const { number, message } = req.body
+
     try{
-    sender.sendText("5544998973198@c.us", "Olá, essa é uma mensagem automática")
+    await sender.sendText(number, message)
 
     return res.status(200).json()
   } catch (error) {
