@@ -20,7 +20,7 @@
 
 ## 📝 Sobre
 
-## Projetos
+## Projeto
 
 ## 🚀 Tecnologias utilizadas 
 - HTML
